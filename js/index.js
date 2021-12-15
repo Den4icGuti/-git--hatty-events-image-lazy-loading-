@@ -7,7 +7,7 @@ const ref = {
 const { coords, input, output } = ref;
 let countMouseMove = 0;
 
-// window.addEventListener('mousemove',_.debounce(onMouseMove,500))
+ window.addEventListener('mousemove',_.throttle(onMouseMove,500))
 
 function onMouseMove(event) { 
   countMouseMove += 1;
