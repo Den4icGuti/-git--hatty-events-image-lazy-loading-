@@ -1,0 +1,50 @@
+body {
+  background-color: aliceblue;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+ul {
+  list-style: none;
+}
+img {
+  display: block;
+}
+
+p {
+  width: 880px;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+p.showDesc {
+  background-color: rgb(138, 199, 26);
+  color: rgb(158, 26, 26);
+}
+
+.car img {
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: all 500ms linear 500ms;
+  width: 900px;
+  height: 480px;
+  object-fit: cover;
+}
+
+.car img.showImg {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.car__item {
+  margin-bottom: 32px;
+}
+
+.car :not(:last-child) {
+  margin-bottom: 40px;
+}
